@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 1fr 14fr;
+}
+
+.logo {
+  background-color: rgb(105, 245, 245);
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.sidenav {
+  background-color: rgb(120, 120, 243);
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.top-navbar {
+  background-color: yellow;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.welcome-banner {
+  background-color: rgb(35, 136, 35);
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.content {
+  background-color: rgb(250, 133, 0);
+  grid-area: 3 / 2 / 4 / 3;
+}
