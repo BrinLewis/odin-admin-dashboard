@@ -30,6 +30,10 @@ body {
   background-color: rgb(218, 218, 218);
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
 /* div {
   border: 2px solid red;
 } */
@@ -178,18 +182,17 @@ li:nth-child(7) {
   margin-top: 20px;
   grid-area: 3 / 2 / 4 / 3;
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 350px;
 }
 
 
 /* Projects Area */
 
 .main-content {
-  /* border: 2px solid rgb(214, 214, 214); */
   display: grid;
-  grid-template-rows: 20px 1fr;
-  padding: 30px;
-  padding-top: 20px;
+  grid-template-rows: 25px 1fr;
+  padding: 20px;
+  padding-right: 0;
   gap: 10px;
 }
 
@@ -200,13 +203,12 @@ li:nth-child(7) {
 }
 
 .project {
-  font-size: 1.1rem;
   display: grid;
   grid-template-rows: 1fr 15%;
   border: 2px solid black;
   border-radius: 10px;
   word-wrap: normal;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 .content-icons {
@@ -234,14 +236,14 @@ li:nth-child(7) {
 /* Side Content Area */
 
 .side-content {
-  box-sizing: border-box;
   display: grid;
-  grid-template-rows: 20px 1fr 20px 1fr;
+  grid-template-rows: 25px max-content 45px max-content;
   gap: 10px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-top: 20px;
-  max-height: 795px;
+  padding: 20px 40px;
+}
+
+.side-content h3:nth-child(3) {
+  align-self: end;
 }
 
 .announcements-container h5 {
@@ -250,9 +252,10 @@ li:nth-child(7) {
 
 .announcements-container {
   font-size: 14px;
-  padding: 20px;
+  padding: 20px 30px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
   align-items: center;
 }
 
@@ -260,7 +263,8 @@ li:nth-child(7) {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
-  padding: 20px;
+  gap: 10px;
+  padding: 30px;
 }
 
 .announcements-container,
@@ -273,7 +277,7 @@ li:nth-child(7) {
   font-size: 0.9rem;
   display: grid;
   grid-template-columns: 50px 1fr;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
 }
 
