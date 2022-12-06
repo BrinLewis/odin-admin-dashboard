@@ -8,6 +8,11 @@
 
 :root {
   font-size: 18px;
+  --light-gray: #DAD2D8;
+  --dark-gray: #143642;
+  --blue: #0F8B8D;
+  --yellow: #EC9A29;
+  --pink: #C96480;
 }
 
 body {
@@ -237,7 +242,7 @@ li:nth-child(7) {
 
 .side-content {
   display: grid;
-  grid-template-rows: 25px max-content 45px max-content;
+  grid-template-rows: 25px max-content 45px 1fr;
   gap: 10px;
   padding: 20px 40px;
 }
