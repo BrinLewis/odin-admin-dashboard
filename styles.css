@@ -312,11 +312,18 @@ li:nth-child(7) {
 
 .announcements-container {
   font-size: 14px;
-  padding: 20px 30px;
+  padding: 20px 25px;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-rows: repeat(3, max-content);
   align-items: center;
+}
+
+.announcement {
+  padding: 10px 10px;
+}
+
+.announcement:not(:nth-child(3)) {
+  border-bottom: 1.5px solid var(--gray-3);
 }
 
 .trending-container {
